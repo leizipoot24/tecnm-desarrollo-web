@@ -79,3 +79,10 @@ Repositorio oficial y entorno de laboratorio interactivo para el curso de **Desa
 ---
 **Docente Titular:** MCC. Iván Márquez Larios (`ijmarquezl`)  
 **Tecnológico Nacional de México — Campus Cancún**
+
+
+
+Nombre: Leizi Astril Poot Cabrera.
+Matricula: 23531123
+Carrera: ING. EN SISTEMAS COMPUTACIONALES.
+Unidad: La Pantera.
