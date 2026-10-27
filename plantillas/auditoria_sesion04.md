@@ -11,8 +11,7 @@
 ## 1. Fase 1: El Artesano (Dificultad Manual)
 *Reto:* Diseño de URIs jerárquicas sin verbos en la ruta  
 *Describe qué dificultad encontraste al procesar la petición HTTP o validar campos a mano:*
-> 
-La dificultad que encontré fue organizar las rutas para consultar los libros de cada autor y comprobar que los datos fueran correctos. También tuve que considerar cómo filtrar los libros por género y limitar los resultados. Aprendí que la ruta debe representar el recurso y que el método HTTP indica la operación que se realiza.
+> La dificultad que encontré fue organizar las rutas para consultar los libros de cada autor y comprobar que los datos fueran correctos. También tuve que considerar cómo filtrar los libros por género y limitar los resultados. Aprendí que la ruta debe representar el recurso y que el método HTTP indica la operación que se realiza.
 ---
 
 ## 2. Fase 2: El Científico (Ingeniería de Requerimientos C-R-E-O)
