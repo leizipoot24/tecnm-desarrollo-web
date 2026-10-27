@@ -57,7 +57,58 @@ las rutas y sus resultados.
 
 ## 3. Código Devuelto por el Modelo
 ```python
-# Código devuelto por el LLM
+%%writefile app.py
+from fastapi import FastAPI, HTTPException
+from typing import Optional
+
+app = FastAPI(title="API de libros y autores")
+
+autores = {
+    1: {"id": 1, "nombre": "Gabriel García Márquez"},
+    2: {"id": 2, "nombre": "Julio Cortázar"}
+}
+
+libros = [
+    {"id": 1, "autor_id": 1, "titulo": "Cien años de soledad", "genero": "novela"},
+    {"id": 2, "autor_id": 1, "titulo": "Doce cuentos peregrinos", "genero": "cuento"},
+    {"id": 3, "autor_id": 2, "titulo": "Rayuela", "genero": "novela"}
+]
+
+@app.get("/api/libros")
+def mostrar_libros():
+    return {"libros": libros}
+
+@app.get("/api/autores/{autor_id}/libros")
+def buscar_libros(autor_id: int, genero: Optional[str] = None,
+                  limite: Optional[int] = None):
+
+    if autor_id not in autores:
+        raise HTTPException(status_code=404, detail="Autor no encontrado")
+
+    resultado = []
+
+    for libro in libros:
+        if libro["autor_id"] == autor_id:
+            resultado.append(libro)
+
+    if genero is not None:
+        resultado = [
+            libro for libro in resultado
+            if libro["genero"].lower() == genero.lower()
+        ]
+
+    if limite is not None:
+        if limite < 0:
+            raise HTTPException(
+                status_code=422,
+                detail="El limite no puede ser negativo"
+            )
+        resultado = resultado[:limite]
+
+    return {
+        "autor_id": autor_id,
+        "libros": resultado
+    }
 ```
 
 ---
