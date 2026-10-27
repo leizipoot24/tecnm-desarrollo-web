@@ -2,8 +2,8 @@
 **Materia:** Desarrollo de Aplicaciones Web (DAB-2201)  
 **Tema:** Anatomía RESTful, URIs Nombres y Recursos  
 **Docente Titular:** MCC. Iván Márquez Larios (`ijmarquezl`)  
-**Estudiante:** [Nombre Completo]  
-**Matrícula:** [No. de Control]  
+**Estudiante:** [Leizi Astril Poot Cabrera]  
+**Matrícula:** [23531123]  
 **Track:** [ Python/FastAPI | PHP 8+ ]  
 
 ---
@@ -12,7 +12,7 @@
 *Reto:* Diseño de URIs jerárquicas sin verbos en la ruta  
 *Describe qué dificultad encontraste al procesar la petición HTTP o validar campos a mano:*
 > 
-
+La dificultad que encontré fue organizar las rutas para consultar los libros de cada autor y comprobar que los datos fueran correctos. También tuve que considerar cómo filtrar los libros por género y limitar los resultados. Aprendí que la ruta debe representar el recurso y que el método HTTP indica la operación que se realiza.
 ---
 
 ## 2. Fase 2: El Científico (Ingeniería de Requerimientos C-R-E-O)
@@ -20,14 +20,38 @@
 ### 2.1 Matriz de Especificación Formal (Contrato OpenAPI / DTO)
 | Elemento C-R-E-O | Definición Técnica |
 | :--- | :--- |
-| **Contexto (C)** | FastAPI 0.110+ (Python 3.10+) o PHP 8.2 con servidor embebido |
-| **Rol (R)** | Arquitecto de software senior especialista en APIs RESTful y Seguridad Web |
-| **Especificación (E)** | Mapeo formal de recursos y parámetros de ruta |
-| **Output (O)** | Solo código modular, esquemas Pydantic/DTO y códigos HTTP semánticos |
+| **Contexto (C)** | Python con FastAPI, ejecutado en Google Colab |
+| **Rol (R)** | Asistente de programación especializado en el diseño de APIs RESTful. |
+| **Especificación (E)** | Crear las rutas para consultar los libros de un autor, filtrar por género, limitar los resultados, comprobar si existe el autor y consultar la colección completa. |
+| **Output (O)** | Archivo app.py con las rutas solicitadas, respuestas JSON y códigos HTTP adecuados. |
 
 ### 2.2 Prompt Estructurado
 ```text
-[Pega aquí el prompt formal que redactaste para la IA]
+Contexto:
+Estoy trabajando en Google Colab con Python y FastAPI
+para una actividad de Desarrollo de Aplicaciones Web.
+
+Rol:
+Actúa como asistente de programación y ayúdame a crear
+una API RESTful de autores y libros.
+
+Especificación:
+Crea GET /api/autores/{autor_id}/libros para consultar
+los libros de un autor.
+Permite los parámetros opcionales genero y limite.
+Si el autor no existe, responde con HTTP 404 y el mensaje
+"Autor no encontrado".
+Crea GET /api/libros para consultar todos los libros.
+Registra a Gabriel García Márquez con los libros
+"Cien años de soledad" (novela) y "Doce cuentos
+peregrinos" (cuento), y a Julio Cortázar con "Rayuela"
+(novela).
+Las rutas deben representar recursos y no acciones.
+
+Output:
+Entrega el código completo de app.py, con respuestas
+JSON y códigos HTTP adecuados. Explica cómo comprobar
+las rutas y sus resultados.
 ```
 
 ---
@@ -42,13 +66,15 @@
 ## 4. Fase 3: El Auditor (Resultados del Test Harness HTTP)
 *Pruebas ejecutadas:* Pruebas de peticiones a recursos inexistentes (404)
 
-* [ ] Respuestas semánticas correctas (`200 OK`, `201 Created`, `400 Bad Request`, `422 Unprocessable`).
-* [ ] No existen respuestas HTTP `500 Internal Server Error` no capturadas.
-* [ ] Encabezados `Content-Type: application/json` correctamente configurados.
+* [x] Respuestas semánticas correctas (`200 OK`, `201 Created`, `400 Bad Request`, `422 Unprocessable`).
+* [x] No existen respuestas HTTP `500 Internal Server Error` no capturadas.
+* [x] Encabezados `Content-Type: application/json` correctamente configurados.
 
 ### Reporte Crítico
 *¿Qué código de estado HTTP o falla de seguridad omitió la IA y cómo lo corregiste?*
-> 
+>La respuesta HTTP 404 para un autor inexistente se incluyó mediante una validación que comprueba si el autor está registrado antes de consultar sus libros. También revisé que las respuestas de consulta fueran JSON.
+
+Las pruebas de esta actividad se enfocan principalmente en los códigos HTTP 200 y 404. Los códigos 201 y 400 no forman parte de las cuatro pruebas principales descritas en el contrato, por lo que no afirmo haberlos comprobado. El código 422 se utiliza para validar entradas no aceptadas, como un límite negativo en esta implementación. 
 
 ---
-**Firma digital:** [Usuario de GitHub]
+**Firma digital:** [Leizi Astril Poot Cabrera]
