@@ -20,10 +20,8 @@ La dificultad que encontré fue comprender cómo pasar el repositorio a los endp
 ### 2.1 Matriz de Especificación Formal (Contrato OpenAPI / DTO)
 | Elemento C-R-E-O | Definición Técnica |
 | :--- | :--- |
-| **Contexto (C)** |
-Trabajar con Python y FastAPI en Google Colab, utilizando las herramientas instaladas para desarrollar y probar la API. |
-| **Rol (R)** | 
-Actuar como un estudiante de Desarrollo de Aplicaciones Web que busca implementar una API utilizando inyección de dependencias. |
+| **Contexto (C)** |Trabajar con Python y FastAPI en Google Colab, utilizando las herramientas instaladas para desarrollar y probar la API. |
+| **Rol (R)** | Actuar como un estudiante de Desarrollo de Aplicaciones Web que busca implementar una API utilizando inyección de dependencias. |
 | **Especificación (E)** | Crear un repositorio en memoria, implementar get_repositorio() y utilizar Depends() en los endpoints para registrar y consultar libros. Validar los datos recibidos y respetar los códigos HTTP. |
 | **Output (O)** | Obtener un archivo app.py funcional, con los endpoints solicitados, las validaciones correspondientes y las pruebas del verificador en verde. |
 
