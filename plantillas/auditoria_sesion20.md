@@ -2,8 +2,8 @@
 **Materia:** Desarrollo de Aplicaciones Web (DAB-2201)  
 **Tema:** Hito 2: API con Inyección de Dependencias, Auth JWT y RBAC  
 **Docente Titular:** MCC. Iván Márquez Larios (`ijmarquezl`)  
-**Estudiante:** [Nombre Completo]  
-**Matrícula:** [No. de Control]  
+**Estudiante:** [Javier Alexander Aviles Darza, Leizi Astril Poot Cabrera, Yahir Santoyo Sanchez]  
+**Matrícula:** [23531054, 23531123]  
 **Track:** [ Python/FastAPI | PHP 8+ ]  
 
 ---
