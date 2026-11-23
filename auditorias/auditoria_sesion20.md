@@ -167,15 +167,25 @@ def panel_administrador(usuario=Depends(obtener_usuario)):
 ## VERIFICACIÓN DEL RESULTADO · 7 casos · app.py
 
 ==============================================================================
+
 ✅ 01. Registro sin filtrar contraseñas
+
 ✅ 02. Login del usuario registrado
+
 ✅ 03. El usuario accede a su perfil
+
 ✅ 04. El usuario no entra al panel admin
+
 ✅ 05. El administrador obtiene su token
+
 ✅ 06. El administrador entra al panel
+
 ✅ 07. Sin token no hay acceso
+
 ------------------------------------------------------------------------------
+
 RESULTADO: 7/7 casos correctos. ¡Resultado logrado!
+
 ---
 
 ## 4. Fase 3: El Auditor (Resultados del Test Harness HTTP)
