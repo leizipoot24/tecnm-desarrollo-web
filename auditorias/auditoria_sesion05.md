@@ -92,6 +92,24 @@ def crear_libro(libro: LibroEntrada):
 def listar_libros():
     return {"libros": libros}
 ```
+## VERIFICACIÓN DEL RESULTADO · 5 casos · app.py
+
+==============================================================================
+
+✅ 01. Un libro válido se crea con 201
+
+✅ 02. La cadena numérica se convierte a entero
+
+✅ 03. Un año no numérico produce 422
+
+✅ 04. Un campo extra produce 422
+
+✅ 05. El listado devuelve los libros creados
+
+------------------------------------------------------------------------------
+
+
+RESULTADO: 5/5 casos correctos. ¡Resultado logrado!
 Se utilizó como base el archivo app.py, que contiene los modelos LibroEntrada y LibroSalida, una ruta POST para registrar libros y una ruta GET para consultar el listado.
 
 Durante la revisión se encontró que el listado devolvía una lista directamente, pero el verificador esperaba un objeto JSON con la clave libros. Se corrigió la respuesta para que tuviera el formato solicitado.
