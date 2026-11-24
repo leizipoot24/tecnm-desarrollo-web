@@ -112,6 +112,31 @@ def eliminar_libro(id: int):
     )
 
 ---
+## VERIFICACIÓN DEL RESULTADO · 8 casos · app.py
+
+==============================================================================
+
+✅ 01. La colección inicia vacía
+
+✅ 02. POST crea el libro con id 1
+
+✅ 03. GET lista el libro creado
+
+✅ 04. GET por id encuentra el libro
+
+✅ 05. PUT reemplaza el libro
+
+✅ 06. DELETE elimina el libro
+
+✅ 07. El libro eliminado ya no existe
+
+✅ 08. PATCH no está implementado: 405, no 404
+
+------------------------------------------------------------------------------
+
+RESULTADO: 8/8 casos correctos. ¡Resultado logrado!
+
+
 
 ## 4. Fase 3: El Auditor (Resultados del Test Harness HTTP)
 *Pruebas ejecutadas:* Pruebas de métodos no permitidos (HTTP 405)
