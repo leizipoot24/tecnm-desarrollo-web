@@ -133,6 +133,21 @@ El archivo implementa un modelo Pydantic para validar los datos de los libros, c
 
 
 ---
+## VERIFICACIÓN DEL RESULTADO · 4 casos · app.py
+
+==============================================================================
+
+✅ 01. POST válido en JSON
+
+✅ 02. POST en texto plano se rechaza con 415
+
+✅ 03. GET que pide XML se rechaza con 406
+
+✅ 04. GET que acepta JSON responde 200
+
+------------------------------------------------------------------------------
+
+RESULTADO: 4/4 casos correctos. ¡Resultado logrado!
 
 ## 4. Fase 3: El Auditor (Resultados del Test Harness HTTP)
 *Pruebas ejecutadas:* Pruebas con tipos de contenido no soportados (415)
