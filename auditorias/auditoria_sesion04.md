@@ -110,6 +110,22 @@ def buscar_libros(autor_id: int, genero: Optional[str] = None,
         "libros": resultado
     }
 ```
+##VERIFICACIÓN DEL RESULTADO · 4 casos · app.py
+
+==============================================================================
+
+✅ 01. Libros del autor 1
+
+✅ 02. Filtro por género y límite
+
+✅ 03. Un autor inexistente produce 404
+
+✅ 04. La colección completa de libros
+
+------------------------------------------------------------------------------
+
+RESULTADO: 4/4 casos correctos. ¡Resultado logrado!
+
 
 ---
 
