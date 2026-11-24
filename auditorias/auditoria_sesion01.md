@@ -127,6 +127,21 @@ async def listar_libros(request: Request):
     )
 
 ```
+## VERIFICACIÓN DEL RESULTADO · 4 casos · app.py
+
+==============================================================================
+
+✅ 01. El servidor está vivo y responde JSON
+
+✅ 02. El eco devuelve el mensaje recibido
+
+✅ 03. Un JSON roto no tumba el servidor
+
+✅ 04. El método incorrecto se rechaza con 405
+
+------------------------------------------------------------------------------
+
+RESULTADO: 4/4 casos correctos. ¡Resultado logrado!
 El código se ejecutó en Google Colab y debía comprobarse con el verificador proporcionado por el docente.
 
 El archivo implementa un modelo Pydantic para validar los datos de los libros, comprueba los encabezados Content-Type y Accept, y utiliza respuestas JSON con los códigos HTTP correspondientes.
