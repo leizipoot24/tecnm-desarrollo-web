@@ -146,6 +146,21 @@ def obtener_libro(
     return libro
 
 ```
+## VERIFICACIÓN DEL RESULTADO · 4 casos · app.py
+
+==============================================================================
+
+✅ 01. El diagnóstico revela el repositorio inyectado
+
+✅ 02. El endpoint inyectado crea un libro
+
+✅ 03. El repositorio conserva el estado
+
+✅ 04. La validación sigue en el borde
+
+------------------------------------------------------------------------------
+
+RESULTADO: 4/4 casos correctos. ¡Resultado logrado!
 
 ---
 
