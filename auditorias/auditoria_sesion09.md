@@ -77,6 +77,19 @@ async def obtener_libros():
     return {"libros": []}
 
 ```
+## VERIFICACIÓN DEL RESULTADO · 3 casos · app.py
+
+==============================================================================
+
+✅ 01. Una respuesta correcta trae tiempo y traza
+
+✅ 02. El X-Request-ID del cliente se conserva
+
+✅ 03. El middleware también cubre los 404
+
+------------------------------------------------------------------------------
+
+RESULTADO: 3/3 casos correctos. ¡Resultado logrado!
 
 ---
 
