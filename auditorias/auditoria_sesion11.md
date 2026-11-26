@@ -106,6 +106,22 @@ def listar():
 def crear(libro: Libro):
     return crear_libro(libro.titulo, libro.anio)
 ---
+## VERIFICACIÓN DEL RESULTADO · 4 casos · app.py
+
+==============================================================================
+
+✅ 01. El listado inicia vacío
+
+✅ 02. El servicio crea un libro
+
+✅ 03. El listado conserva el contrato
+
+✅ 04. La validación del router sigue funcionando
+
+------------------------------------------------------------------------------
+
+RESULTADO: 4/4 casos correctos. ¡Resultado logrado!
+
 
 ## 4. Fase 3: El Auditor (Resultados del Test Harness HTTP)
 *Pruebas ejecutadas:* Pruebas de aislamiento de errores en lógica de negocio
