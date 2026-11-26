@@ -149,6 +149,25 @@ assert "hash" not in login_correcto.json()
 print("\nTODAS LAS PRUEBAS CORRECTAS")
 
 ```
+## VERIFICACIÓN DEL RESULTADO · 3 casos · app.py
+
+==============================================================================
+
+✅ 01. El registro responde sin filtrar la contraseña
+
+✅ 02. El login correcto autentica
+
+✅ 03. La contraseña incorrecta se rechaza
+
+------------------------------------------------------------------------------
+
+## RESULTADO: 3/3 casos correctos. ¡Resultado logrado!
+
+Se usa un algoritmo de hashing para contraseñas
+
+------------------------------------------------------------------------------
+
+RESULTADO: 1/1 comprobaciones correctas. ¡Resultado logrado!
 
 ---
 
