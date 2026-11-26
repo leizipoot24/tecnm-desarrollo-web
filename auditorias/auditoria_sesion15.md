@@ -139,6 +139,27 @@ def obtener_perfil(usuario: str = Depends(obtener_usuario)):
     }
 
 ```
+## VERIFICACIÓN DEL RESULTADO · 4 casos · app.py
+
+==============================================================================
+
+✅ 01. El login emite un token
+
+✅ 02. El token válido abre el perfil
+
+✅ 03. Un token alterado es rechazado
+
+✅ 04. Sin token no hay acceso
+
+------------------------------------------------------------------------------
+
+## RESULTADO: 4/4 casos correctos. ¡Resultado logrado!
+
+Se usa una librería JWT
+
+------------------------------------------------------------------------------
+
+RESULTADO: 1/1 comprobaciones correctas. ¡Resultado logrado!
 
 import os
 import secrets
