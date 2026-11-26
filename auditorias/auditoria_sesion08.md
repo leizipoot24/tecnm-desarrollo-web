@@ -140,6 +140,21 @@ async def crear_libro(libro: LibroEntrada):
 ```
 
 ---
+## VERIFICACIÓN DEL RESULTADO · 4 casos · app.py
+
+==============================================================================
+
+✅ 01. Un libro existente responde 200
+
+✅ 02. Un libro inexistente responde 404 con sobre de error
+
+✅ 03. Los datos inválidos responden 422 con sobre de error
+
+✅ 04. Un libro válido sigue respondiendo 201
+
+------------------------------------------------------------------------------
+
+RESULTADO: 4/4 casos correctos. ¡Resultado logrado!
 
 ## 4. Fase 3: El Auditor (Resultados del Test Harness HTTP)
 *Pruebas ejecutadas:* Pruebas de captura de errores sin crashing (HTTP 500)
