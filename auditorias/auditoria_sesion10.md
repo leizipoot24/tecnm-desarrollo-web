@@ -115,6 +115,31 @@ def eliminar_libro(libro_id: int):
     del libros_db[libro_id]
     return Response(status_code=204)
 ```
+## VERIFICACIÓN DEL RESULTADO · 9 casos · app.py
+
+==============================================================================
+
+✅ 01. Listado inicial vacío
+
+✅ 02. Creación válida
+
+✅ 03. Consulta del libro creado
+
+✅ 04. Actualización del libro
+
+✅ 05. Eliminación del libro
+
+✅ 06. El libro eliminado ya no existe
+
+✅ 07. Validación de datos inválidos
+
+✅ 08. Método no permitido
+
+✅ 09. Contrato OpenAPI disponible
+
+------------------------------------------------------------------------------
+
+RESULTADO: 9/9 casos correctos. ¡Resultado logrado!
 
 ---
 
